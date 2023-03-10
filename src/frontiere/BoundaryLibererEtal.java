@@ -1,5 +1,7 @@
 package frontiere;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
+
 import controleur.ControlLibererEtal;
 
 public class BoundaryLibererEtal {
@@ -10,7 +12,20 @@ public class BoundaryLibererEtal {
 	}
 
 	public void libererEtal(String nomVendeur) {
-		//TODO a completer
+		Boolean vendeurExiste = controlLibererEtal.isVendeur(nomVendeur);
+		
+		if (!vendeurExiste) {
+			System.out.println("Mais vous n'etes pas inscrit sur notre marché aujourd'hui");
+		} else {
+			String[] tabEtal = controlLibererEtal.libererEtal(nomVendeur);
+			String etalOccupe = tabEtal[0];
+			if (etalOccupe.equals("true")){
+				String produit = tabEtal[2];
+				String quantiteInit = tabEtal[3];
+				String quantiteVendue = tabEtal[4];
+				System.out.println("Vous avez vendu " + quantiteVendue + " sur " + quantiteInit + " " + produit +"\n");
+				System.out.println("Au revoir " + tabEtal[0] + ", passez une bonne journée");
+			}
+		}
 	}
-
 }

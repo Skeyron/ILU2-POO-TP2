@@ -26,10 +26,7 @@ public class BoundaryPrendreEtal {
 			} else {
 				System.out.println("Désolée "+ nomVendeur + ", Il n'y a plus aucun étal disponible");
 			}
-
-			
 		}
-
 	}
 
 	private void installerVendeur(String nomVendeur) {

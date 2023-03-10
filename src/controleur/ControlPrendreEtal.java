@@ -14,7 +14,7 @@ public class ControlPrendreEtal {
 	}
 
 	public boolean resteEtals() {
-		return !village.rechercherEtalVide();
+		return village.rechercherEtalVide();
 	}
 
 	public int prendreEtal(String nomVendeur, String produit, int nbProduit) {

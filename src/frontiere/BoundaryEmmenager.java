@@ -32,6 +32,7 @@ public class BoundaryEmmenager {
 					question2.append("Quelle est votre force ?\n");
 					int choix = Clavier.entrerEntier(question2.toString());	
 					controlEmmenager.ajouterGaulois(nomVisiteur, choix);
+					break;
 				default:
 					System.out
 							.println("Vous devez choisir le chiffre 1 ou 2 !");
