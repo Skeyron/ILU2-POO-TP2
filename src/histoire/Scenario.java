@@ -28,7 +28,6 @@ public class Scenario {
 		ControlEmmenager controlEmmenager = new ControlEmmenager(village);
 		ControlAfficherVillage controlAfficherVillage = new ControlAfficherVillage(
 				village);
-
 		ControlVerifierIdentite controlVerifierIdentite = new ControlVerifierIdentite(
 				village);
 		ControlTrouverEtalVendeur controlTrouverEtalVendeur = new ControlTrouverEtalVendeur(

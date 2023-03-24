@@ -1,7 +1,4 @@
 package frontiere;
-
-import com.sun.org.apache.xpath.internal.operations.Bool;
-
 import controleur.ControlLibererEtal;
 
 public class BoundaryLibererEtal {
